@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Velvet</title>
+    <link rel="icon" type="image/png" href="assets\image\Vblanco.png"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        
+    .navbar-custom {
+      background-color: #fdd3d7; /* rosado claro */
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: rgb(243, 70, 70);
+    }
+
+    .navbar-brand,
+    .navbar-brand:focus,
+    .navbar-brand:active,
+    .navbar-brand:visited {
+    color: rgb(243, 70, 70);
+    text-decoration: none;
+    }
+
+    .navbar-brand:hover {
+      color: rgb(243, 70, 70);
+    }
+
+    .navbar-brand img {
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .nav-link {
+      font-weight: bold;
+      color: rgb(243, 70, 70);
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+      background-color: #fdb2b2;
+      color: rgb(243, 70, 70);
+    }
+
+    .section-title {
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 100px;
+    }
+    .section-subtitle {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+    .menu-section, .calidad-section, .pedir-section {
+      padding: 60px 30px;
+    }
+    .menu-card img, .calidad-img {
+      border-radius: 15px;
+      object-fit: cover;
+      width: 100%;
+      height: 300px;
+    }
+    .menu-card ul, .calidad-list {
+      color: white;
+      text-shadow: 1px 1px 3px black;
+    }
+    .pedir-section {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 80px 30px;
+    }
+    .footer {
+      background-color: #212121;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    
+    /* Carrusel responsive */
+    .carousel-item {
+    height: auto;
+    max-height: 500px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    }
+
+    .carousel-item img {
+    max-height: 500px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    }
+
+    body {
+    padding-top: 70px;
+    }
+
+    .menu-card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .menu-card .card-img {
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    }
+
+    .bg-overlay {
+    background: rgba(0, 0, 0, 0.5); /* sombra semitransparente sobre la imagen */
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    }
+
+    @media (min-width: 768px) {
+    .carousel-inner {
+        max-height: 500px; /* Altura máxima en pantallas grandes */
+    }
+    }
+
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top px-4">
+        <span class="navbar-brand d-flex align-items-center">
+            Sweet Velvet <img src="assets/image/Vblanco.png" alt="Logo" width="30" height="24" class="ms-2">
+        </span>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#menu">Menú</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#calidad">Calidad de Servicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#pedir">Pedir</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- INICIO -->
+    <section id="inicio" class="d-flex flex-column align-items-center justify-content-center vh-100 bg-white">
+        <h1 class="section-title">Bienvenidos a Sweet Velvet</h1>
+        <p class="section-subtitle">La dulzura merece elegancia.</p>
+    </section>
+
+    <!-- MENÚ -->
+    <section id="menu" class="menu-section bg-black text-white">
+    <h2 class="text-center mb-5">Menú</h2>
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+            
+            <!-- Pasteles -->
+            <div class="col-md-5">
+                <div class="card menu-card border-0">
+                <div class="position-relative">
+                    <img src="assets/image/Img8.jpg" class="card-img" alt="Pastel">
+                    <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center bg-overlay text-center">
+                    <h4 class="card-title">Pasteles</h4>
+                    <ul class="list-unstyled">
+                        <li>Chocolate ₡1300 (porción) ₡13000 (entero)</li>
+                        <li>Tres Leches ₡1500 (porción) ₡15000 (entero)</li>
+                        <li>Zanahoria ₡1300 (porción) ₡13000 (entero)</li>
+                        <li>Red Velvet ₡1500 (porción) ₡15000 (entero)</li>
+                        <li>Oreo ₡1500 (porción) ₡18000 (entero)</li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Mini Cakes -->
+            <div class="col-md-5">
+                <div class="card menu-card border-0">
+                <div class="position-relative">
+                    <img src="assets/image/Img4.jpg" class="card-img" alt="Mini Cake">
+                    <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center bg-overlay text-center">
+                    <h4 class="card-title">Mini Cakes</h4>
+                    <ul class="list-unstyled">
+                        <li>Zanahoria ₡6000</li>
+                        <li>Vainilla ₡6000</li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Mini Cakes -->
+            <div class="col-md-5">
+                <div class="card menu-card border-0">
+                <div class="position-relative">
+                    <img src="assets/image/img6.jpg" class="card-img" alt="Mini Cake">
+                    <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center bg-overlay text-center">
+                    <h4 class="card-title">Pie</h4>
+                    <ul class="list-unstyled">
+                        <li>Limón ₡1500 (porción) ₡15000 (entero)</li>
+                        <li>Maracuyá ₡1500 (porción) ₡15000 (entero)</li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CALIDAD DE SERVICIO -->
+    <section id="calidad" class="calidad-section bg-white">
+        <h2 class="text-center mb-5">Servicio</h2>
+        <div class="container">
+            <div class="row align-items-center">
+            <div class="col-md-6">
+                <ul class="list-unstyled fs-5 calidad-list">
+                <li><i class="bi bi-cake2"></i> Entrega Personal</li>
+                <li><i class="bi bi-cake2"></i> Grecia Centro</li>
+                <li><i class="bi bi-cake2"></i> Variedad de Productos</li>
+                <li><i class="bi bi-cake2"></i> Servicio Amable</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="assets/image/img3.jpg" class="img-fluid calidad-img" alt="Pastel">
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARRUSEL DE FOTOS -->
+    <section class="bg-white py-5">
+        <div class="container">
+            <div id="carruselFotos" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                <img src="assets/image/img1.jpg" class="d-block w-100" alt="Foto 1">
+                </div>
+                <div class="carousel-item">
+                <img src="assets/image/img2.jpg" class="d-block w-100" alt="Foto 2">
+                </div>
+                <div class="carousel-item">
+                <img src="assets/image/Img7.jpg" class="d-block w-100" alt="Foto 3">
+                </div>
+                <div class="carousel-item">
+                <img src="assets/image/Img5.jpg" class="d-block w-100" alt="Foto 4">
+                </div>
+                <div class="carousel-item">
+                <img src="assets/image/img11.jpg" class="d-block w-100" alt="Foto 5">
+                </div>
+                <div class="carousel-item">
+                <img src="assets/image/img10.jpg" class="d-block w-100" alt="Foto 6">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselFotos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselFotos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PEDIR AHORA -->
+    <section id="pedir" class="pedir-section">
+    <h2 class="mb-4">¡Pedir Ahora!</h2>
+    <p class="mb-4">Hacemos entregas personales en Grecia Centro. <br> Haz tu pedido directamente en nuestro Instagram o escríbenos.</p>
+    <p class="mb-4"><i class="bi bi-whatsapp"></i> 8983-6876 <br> <i class="bi bi-instagram"></i> Sweet_Velvet_25</p>
+
+    <a href="https://www.instagram.com/sweet_velvet_25?igsh=MXQ0Y21iZmFtenJwYQ==" target="_blank" class="btn btn-light btn-lg">Ir a Instagram</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+    <p>© 2025 Sweet Velvet. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
